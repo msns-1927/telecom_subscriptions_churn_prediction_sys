@@ -1,0 +1,38 @@
+# Python Version:
+Python 3.8 or higher (recommended)
+
+# Core Libraries:
+
+numpy
+
+pandas
+
+scikit-learn
+
+matplotlib
+
+seaborn
+
+plotly
+
+xgboost
+
+lightgbm
+
+optuna (for hyperparameter tuning)
+
+shap (model interpretability)
+
+lime (optional: local interpretability)
+
+Deployment & Dashboard
+
+streamlit
+
+flask (optional: API deployment)
+
+Miscellaneous
+
+joblib
+
+jupyter
