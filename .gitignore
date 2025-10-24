@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python egg metadata
+*.egg-info/
+*.egg
+
+# Data files
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.h5
+
+# Output logs and temp files
+*.log
+*.tmp
+*.out
+
+# Model files
+*.pkl
+*.joblib
+*.h5
+*.sav
+
+# Streamlit cache
+.streamlit/
+
+# VSCode settings
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# Misc
+*.bak
+.idea/
