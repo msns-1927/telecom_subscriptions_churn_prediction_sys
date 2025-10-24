@@ -25,13 +25,13 @@ shap (model interpretability)
 
 lime (optional: local interpretability)
 
-Deployment & Dashboard
+# Deployment & Dashboard:
 
 streamlit
 
 flask (optional: API deployment)
 
-Miscellaneous
+# Miscellaneous:
 
 joblib
 
