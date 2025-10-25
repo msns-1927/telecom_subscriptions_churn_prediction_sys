@@ -52,6 +52,26 @@ This drives actionable insights that help reduce churn rates and maximize busine
 
 - Used for market, trend, and churn analysis
 
+**Installation :**
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/telecom-churn-prediction.git
+   cd telecom-churn-prediction
+   ```
+
+2. Install required libraries:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. (Optional) Launch the dashboard:
+   ```
+   streamlit run app.py
+   ```
+
+Ready to use! (You may need to update file paths or configs as per your setup.)
+
 **Data Preprocessing:**
 
 - Removed duplicates and fixed missing values
@@ -63,3 +83,113 @@ This drives actionable insights that help reduce churn rates and maximize busine
 - Converted dates and numbers to correct formats
 
 - Made the data clean and ready for modeling
+
+**Feature Engineering :**
+
+- Created over 40 new columns to provide more insights for modeling.
+
+- Added growth rates (Month-on-Month, Year-on-Year).
+
+- Classified circles as Metro or Non-Metro.
+
+- Created features for connection type (Wireline/Wireless).
+
+- Calculated market share, competition metrics, and lagged subscriber values.
+
+- Added rolling averages and volatility measures.
+
+- These features helped improve model prediction accuracy.
+
+**Modeling Approach :**
+
+- Split data into training and test sets by time (to avoid data leakage).
+
+- Used preprocessing pipelines for categorical and numeric features.
+
+- Trained several machine learning models: Logistic Regression, LightGBM, XGBoost, and Ensemble Voting Classifier.
+
+- Tuned model hyperparameters (especially XGBoost with Optuna for best results).
+
+- Chose the best model based on accuracy, ROC AUC, and precision/recall.
+
+- Used feature importance (like SHAP) to interpret which features impact churn predictions most.
+
+**Model Performance :**
+
+- Best model: XGBoost (Optuna tuned)
+
+- Accuracy: 87%
+
+- ROC AUC: 0.91 (very strong classification)
+
+- Precision: 87%, Recall: 80% (high reliability)
+
+- Ensemble Classifier (Voting): Accuracy 84%, ROC AUC 0.91
+
+- Outperformed baseline (Logistic Regression: 71% accuracy)
+
+- Accurately identified high-risk churn cases with few false alarms.
+
+**Business Impact :**
+
+- Helps telecom companies spot churn risks early and take action.
+
+- Supports targeted customer retention campaigns.
+
+- Can protect revenue—up to INR 30 lakh per campaign.
+
+- ROI from retention campaigns can reach up to 4,700%.
+
+- Dashboard and predictions guide resource allocation and strategy.
+
+- Enables executives to react quickly to changing market trends.
+
+**Dashboard & Visualization :**
+
+- Interactive dashboard built with Streamlit.
+
+- Shows key metrics: churn risk, market trends, operator/circle performance.
+
+- Includes risk heatmaps, trend lines, and segment filters.
+
+- Supports real-time data drilldown and export of results.
+
+- Visuals help teams quickly find high-risk areas and track campaign impact.
+
+**Usage Instructions :**
+
+1. Place your data file(s) in the project folder (update path in code if needed).
+2. Run the main notebook or Python script to preprocess data and train models.
+3. To launch the dashboard:  
+   ```
+   !streamlit run app.py
+   ```
+4. Explore model results, predictions, and insights through the dashboard.
+5. Adjust settings or retrain by updating code or parameters as needed.
+
+That’s it! Follow on-screen instructions in the dashboard for further analysis.
+
+**Results & Insights :**
+
+- Best model (XGBoost) achieved 87% accuracy and ROC AUC of 0.91.
+- Churn risk accurately highlighted for specific circles and operators.
+- Dashboard visualizations exposed key trends and high-risk segments.
+- Retention actions, if taken early, can deliver up to 4,700% ROI.
+- Analysis revealed market share loss patterns and competition effects, helping guide proactive business strategies.
+
+**Limitations & Future Work :**
+
+- Dataset may contain outdated or missing subscription info for some regions.
+- Only monthly data granularity; finer trends (e.g., weekly) not captured.
+- Churn definitions and business impact calculations may differ by company.
+- Current dashboard is local; cloud deployment and mobile support can be added.
+- **API development planned:** Future enhancements will include REST API endpoints, enabling integration with company systems and real-time predictions.
+- Additional experimentation with deep learning and external customer data sources is possible.
+
+**Contact :**
+
+For questions or support, please contact:  
+Siva Narayana Muppidi  
+Email: sivanarayanamuppidi11329@gmail.com
+
+You can also openly contact for project-related queries.
